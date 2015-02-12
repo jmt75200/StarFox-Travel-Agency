@@ -2,10 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Starfox Travel Agency</title>
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-  <h1>Starfox travel agency</h1>
+  <header>
+    <div id="row">
+      <div class="large-12 columns">
+        <h1><span>StarFox</span> Intergalactic Travel Agency</h1>
+        <div class="logo"></div>
+      </div><!--end of logo column-->
+      <div class="large-12 columns">
+        <!-- nav -->
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Intersteller Travel</li>
+        </ul>
+      </div><!--end of nav column-->
+    </div>
+  </header>
+  <div class="container">
+
+    <div class="row">
+      <div class="large-12 columns">
+        <p class="hero_desc">
+          We will take you to the <span>Moon and Back!</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores culpa, atque, omnis iure illo maxime eaque corporis modi at reiciendis pariatur!
+        </p><!--end of p description-->
+        <div class="icon"></div>
+        <div class="read-more">Find Out More</div>
+      </div><!--end of hero-->
+    </div><!--end of first row-->
+
+    <div class="row">
+      <div class="large-4 columns">
+        <h2>To The Moon</h2>
+        <p>$30,000</p>
+        <p>Covers travel fare, lodgings, and meals for 3 months in space.</p>
+      </div>
+      <div class="large-4 columns">
+        <h2>Just Around Earth</h2>
+        <p>$10,000</p>
+        <p>Covers travel fare, lodgings, and meals for 2 weeks in space.</p>
+      </div>
+      <div class="large-4 columns">
+        <p>Just to Jupiter</p>
+        <p>$26,000</p>
+      </div>
+    </div><!--end of second row-->
+  </div><!--end of container-->
+  <footer>
+    <p>UFO graphics designed by Kari Gaynor and Dimitriy Lagunov from the Noun Project</p>
+  </footer><!--end of footer-->
+
+  <!-- script -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/bower_components/foundation/js/foundation.min.js"></script>
+  <script>
+  $(document).foundation();
+  </script>
 </body>
 </html>
