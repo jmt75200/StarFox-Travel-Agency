@@ -1,0 +1,19 @@
+{
+  "name": "StarFox-Travel-Agency",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jmt75200/StarFox-Travel-Agency",
+  "authors": [
+    "jmt75200 <joelle@pcgamerzhawaii.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.1"
+  }
+}
