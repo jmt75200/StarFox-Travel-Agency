@@ -40,13 +40,34 @@ header{
     }  
   }
   
-  .top-bar .toggle-topbar.menu-icon{
-    top: 40%;
-    background-image: url('/img/menu_icon.svg');
-    background-repeat: no-repeat;
-    background-size: 45px 45px;
-    background-position: 10px 0;
-    height: 50px;
+  .top-bar{
+    .toggle-topbar.menu-icon{
+      top: 40%;
+      background-image: url('/img/menu_icon.svg');
+      background-repeat: no-repeat;
+      background-size: 45px 45px;
+      background-position: 10px 0;
+      height: 45px;
+    }
+  } 
+
+  .top-bar-section ul {
+    border-top: 1px solid $teal;
+    li{
+      > a{
+        @include starfox_font(1.75em, 300, $teal);
+        text-align: left;
+        padding: 0 45px;
+        border-bottom: 1px solid $teal;
+      }
+    }
+    @media #{$medium-up}{
+      li{
+        >a{
+          @include starfox_font(1em, 300, $teal);
+        }
+      }
+    }
   }
 
   @media #{$medium-up}{
@@ -90,27 +111,62 @@ header{
 
 /* -- Highlights -- */
 .highlight_wrap{
-  padding: 60px;
+  padding: 60px 60px 10px;
   @include starfox_font(1.2em, 300, $white);
 }
 
 .highlight{
   background-color: $lightgrey;
   // padding: 10px 70px;
-  margin-bottom: 60px;
+  margin-bottom: 56px;
   border-radius: 5px;
   
   .title{
     border-bottom: 1px solid $linedark;
     padding: 20px 0;
-    h2{
-      @include starfox_font(2em, 300, $white);
+    h3{
+       @include starfox_font(1.3em, 700, $white);
       margin: 0;
+      // padding: 
     }
   }
-    h3{
+  .highlight_desc{
+    border-top: 1px solid $linelight;
+    padding: 30px 108px 25px;
+    h2{
+      @include starfox_font(3.5em, 300, $white);
       margin: 0;
-      padding: 
+      border-bottom: 10px solid $white;
+      letter-spacing: 2px;
     }
+    p{
+      padding-top: 22px;
+      @include starfox_font(.75em, 400, $white);
+    }
+  }
+}
 
+/*-- Mobile - more deals --*/
+.more_deals_mobile{
+  display: block;
+  background-color: $teal;
+  padding: 25px;
+  text-align: center;
+
+  a{
+    @include starfox_font(1.5em, 700, $white);
+    padding: 5px 70px;
+    background-image:url('/img/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: 225px center;  
+  }
+}
+
+/*-- Footer --*/
+footer{
+  background-color: $darkgrey;
+  p{
+    @include starfox_font(0.85em, 400, $lightgrey);
+    padding: 10px 140px;
+  }
 }
