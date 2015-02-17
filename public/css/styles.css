@@ -2521,6 +2521,9 @@ a {
 @media only screen and (max-width: 900px) {
   .columns {
     padding: 0; } }
+@media only screen and (min-width:901px) and (max-width:64em) {
+  .columns {
+    padding: 0 3.40625rem; } }
 
 /* Layout */
 /*-- Header --*/
@@ -2601,7 +2604,7 @@ header {
   padding: 10px 30px; }
   .hero_wrap .hero_desc {
     background-image: url('/img/ship.svg');
-    background-position: 100px -50px;
+    background-position: center -50px;
     background-repeat: no-repeat;
     background-size: 320px; }
     .hero_wrap .hero_desc p {
@@ -2649,8 +2652,10 @@ header {
     @media only screen and (min-width:64.063em) {
       .hero_wrap .hero_button {
         float: right;
-        padding: 0 40px;
-        margin-top: -150px; } }
+        padding: 0 22px 0 40px;
+        margin-top: -150px; }
+        .hero_wrap .hero_button a {
+          width: 280px; } }
   @media only screen and (min-width:901px) {
     .hero_wrap {
       border-radius: 6px;
@@ -2710,13 +2715,15 @@ header {
         .highlight_wrap .highlight_box .highlight_cost {
           padding-top: 30px; } }
     .highlight_wrap .highlight_box .highlight_desc {
-      padding: 0 108px 25px; }
+      padding-bottom: 25px; }
       .highlight_wrap .highlight_box .highlight_desc p {
         padding-top: 22px;
         text-align: center;
         font-size: 0.75em;
         font-weight: 400;
-        color: #FFFFFF; }
+        color: #FFFFFF;
+        width: 230px;
+        margin: auto; }
       @media only screen and (min-width:901px) and (max-width:64em) {
         .highlight_wrap .highlight_box .highlight_desc {
           float: right;
@@ -2746,9 +2753,9 @@ header {
       font-weight: 300;
       color: #FFFFFF;
       margin: 0 auto;
-      padding-bottom: 22px; }
+      padding-bottom: 10px; }
   .highlight_wrap .more_deals {
-    padding: 18px 0; }
+    padding: 17px 0; }
     .highlight_wrap .more_deals a {
       text-align: center;
       font-size: 1.3em;
@@ -2785,13 +2792,18 @@ header {
 
 /*-- Footer --*/
 footer {
-  background-color: #494949; }
+  background-color: #494949;
+  padding: 10px; }
   footer p {
     text-align: center;
     font-size: 0.85em;
     font-weight: 400;
     color: #767676;
-    padding: 10px 140px; }
+    padding: 10px 0; }
+  @media only screen and (max-width: 900px) {
+    footer p {
+      width: 230px;
+      margin: auto; } }
   @media only screen and (min-width:901px) and (max-width:64em) {
     footer p {
       padding-bottom: 80px; } }

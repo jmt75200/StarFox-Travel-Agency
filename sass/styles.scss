@@ -17,6 +17,10 @@ a{
   @media #{$small-only}{
     padding: 0;
   }
+
+  @media #{$medium-only}{
+    padding: 0 3.40625rem;
+  }
 }
 
 /* Layout */
@@ -66,13 +70,13 @@ header{
   .top-bar-section ul {
     border-top: 1px solid $teal;
     li{
-      > a{
+      >a{
         @include starfox_font(1.75em, 300, $teal);
         text-align: left;
         padding: 0 45px;
         border-bottom: 1px solid $teal;
-        }//ends a
-      }//ends li
+      }//ends a
+    }//ends li
 
     @media #{$medium-up}{
       border: none;
@@ -117,7 +121,7 @@ header{
   .hero_desc{
     // height: 525px;
     background-image: url('/img/ship.svg');
-    background-position: 100px -50px;
+    background-position: center -50px;
     @include starfox_bg(no-repeat, 320px);
     
     p{
@@ -169,8 +173,11 @@ header{
     }
     @media #{$large-up}{
       float: right;
-      padding: 0 40px;
+      padding: 0 22px 0 40px;
       margin-top: -150px;
+      a {
+        width: 280px;
+      }
     }
   }//end of hero button
 
@@ -237,10 +244,12 @@ header{
       }
     }
     .highlight_desc{
-      padding: 0 108px 25px;
+      padding-bottom: 25px;
       p{
         padding-top: 22px;
         @include starfox_font(.75em, 400, $white);
+        width: 230px;
+        margin: auto;
       }
       @media #{$medium-only}{
         float: right;
@@ -277,12 +286,12 @@ header{
       h4{
         @include starfox_font(2.4em, 300, $white);
         margin: 0 auto;
-        padding-bottom: 22px;
+        padding-bottom: 10px;
       }
     }
 
   .more_deals{
-    padding: 18px 0;
+    padding: 17px 0;
     a{
       @include starfox_font(1.3em, 400, $white);
       padding: 5px 70px 5px 15px;
@@ -324,10 +333,18 @@ header{
 /*-- Footer --*/
 footer{
   background-color: $darkgrey;
+  padding: 10px;
   p{
     @include starfox_font(0.85em, 400, $lightgrey);
-    padding: 10px 140px;
+    padding: 10px 0;
   }
+  @media #{$small-only}{
+    p{
+      width: 230px;
+      margin: auto;
+    }
+  }
+
   @media #{$medium-only}{
     p{
       padding-bottom: 80px;
