@@ -4,3 +4,9 @@
   font-weight: $starfox_weight;
   color: $starfox_color;
 }
+
+@mixin starfox_bg( $starfox_repeat, $starfox_size){
+  background-repeat: $starfox_repeat;
+  background-size: $starfox_size;
+  // background-position: $starfox_pos;
+}
