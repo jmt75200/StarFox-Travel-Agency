@@ -3,11 +3,11 @@ meta.foundation-version {
 
 meta.foundation-mq-small {
   font-family: "/only screen/";
-  width: 0; }
+  width: 0em; }
 
 meta.foundation-mq-small-only {
-  font-family: "/only screen and (max-width: 40em)/";
-  width: 0; }
+  font-family: "/only screen and (max-width: 900px)/";
+  width: 0em; }
 
 meta.foundation-mq-medium {
   font-family: "/only screen and (min-width:901px)/";
@@ -1738,7 +1738,7 @@ meta.foundation-mq-topbar {
     padding-bottom: .4125rem;
     margin-bottom: 0;
     font-size: 0.75rem; }
-    @media only screen and (max-width: 40em) {
+    @media only screen and (max-width: 900px) {
       .top-bar .button, .top-bar button {
         position: relative;
         top: -1px; } }
@@ -2518,7 +2518,7 @@ body {
 a {
   text-decoration: none; }
 
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 900px) {
   .columns {
     padding: 0; } }
 
